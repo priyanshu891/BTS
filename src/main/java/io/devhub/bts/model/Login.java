@@ -1,12 +1,15 @@
 package io.devhub.bts.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
-@Entity
+
+@Document
 public class Login {
 
     @Id
